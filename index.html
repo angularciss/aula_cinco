@@ -4,6 +4,28 @@
 	<title>Aula 5</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+	<script>
+
+		var meuNome = "Djeison";
+
+		function nomeSomaFn(a,b){
+			var nome = window.prompt("Quem é você?");
+
+			function condicao(){
+				if(nome.length > 2){
+					return "Olá "+nome+". Você tem "+nome.length+" letras";
+				} else if (!!nome.length){
+					return "Você preencheu seu nome errado!";
+				} else {
+					return "Você não preencheu seu nome";
+				}
+			}			
+
+			console.log(condicao());
+		}
+
+		nomeSomaFn(10,20);
+	</script>
 </head>
 <body>
 	<h1>Hello World!</h1>
